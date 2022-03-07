@@ -1,2 +1,3 @@
 Custom HTML Tag Injection
-<ng-content></ng-content>
+<div #ref><ng-content></ng-content></div>
+<span *ngIf="!ref.children.length"> Display this if ng-content is empty! </span>
